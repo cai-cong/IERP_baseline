@@ -31,7 +31,7 @@ def main():
     parser.add_argument('--parallel', action='store_true',help='whether use DataParallel')
     parser.add_argument('--feature_set', default="baichuan13B-base", type=str)
     parser.add_argument('--fea_dim', default=5120, type=int)
-    parser.add_argument('--dataset_file_path', default="/mnt/data/emotion/")
+    parser.add_argument('--dataset_file_path', default="/mnt/data/release/")
     parser.add_argument('--classnum', default=8, type=int)
     parser.add_argument('--epochs', default=200, type=int, help='number of training epochs')
     parser.add_argument('--batch_size', default=64, type=int, help='size of a mini-batch')
