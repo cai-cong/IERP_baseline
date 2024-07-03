@@ -47,7 +47,7 @@ def load_data(args):
                     feature = pd.read_csv(os.path.join(dir, file), header=None).to_numpy()
                 elif file.endswith("npy"):
                     feature = np.load(os.path.join(dir, file))
-                number = int(file[4])
+                number = int(file.split("-")[1])
                 label_file = os.path.join(label_path, vid + '.csv')
                 label = (pd.read_csv(label_file).iloc[:,1:]).to_numpy()
 
